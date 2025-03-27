@@ -1,0 +1,12 @@
+<svg width="98" height="40" viewBox="0 0 98 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Icons">
+<g id="Icon active">
+<circle id="Ellipse 1853" cx="78" cy="20" r="20" fill="#FFB900"/>
+<path id="Vector 21" d="M75 14L81 20L75 26" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="Icon inactive">
+<circle id="Ellipse 1853_2" cx="20" cy="20" r="19.5" transform="matrix(-1 0 0 1 40 0)" stroke="#FFB900"/>
+<path id="Vector 21_2" d="M23 14L17 20L23 26" stroke="#FFB900" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>
