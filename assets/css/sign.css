@@ -67,6 +67,20 @@ a {
     padding: 7px;
     font-size: 1.8rem;
     caret-color: red;
+    border: none;
+    outline: none;
+}
+
+.form-error {
+    color: red;
+    font-size: 1.4rem;
+    margin-top: -20px;
+    margin-bottom: 15px;
+    display: none;
+}
+
+input:invalid:not(:placeholder-shown) + .form-error {
+    display: block;
 }
 
 .f-password {
@@ -95,6 +109,12 @@ a {
 .confirm p {
     font-size: 12px;
     margin-bottom: 20px;
+}
+.signup:has(:invalid) .s-button,
+.login:has(:invalid) .s-button {
+    background: #d6d5d5;
+    cursor: not-allowed;
+    color: #888888;
 }
 
 .s-button {
@@ -183,4 +203,8 @@ a {
     margin-top: 30px;
     text-align: center;
 
+}
+
+.ip::placeholder {
+    color:#d6d5d5;
 }

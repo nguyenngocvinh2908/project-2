@@ -28,11 +28,13 @@
                     <h1 class="a-heading">
                         Sign In
                     </h1>
-                    <form class="login">
+                    <form class="login" autocomplete="off">
                         <label for="Email">Email address</label>
-                        <input class="ip" type="email" placeholder="Email" id="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                        <input class="ip" type="email" placeholder="Email" id="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" autocomplete="off" hidden>
+                        <p class="form-error">Please enter correct email</p>
                         <label for="password">Password</label>
-                        <input class="ip" type="password" placeholder="Password" id="password" required>
+                        <input class="ip" type="password" placeholder="Password" id="password" required minlength="4" hidden>
+                        <p class="form-error">Please enter correct password length</p>
                         <p class="f-password">Forgot password?</p>
                         <button type="submit" class="s-button">Sign In</button>
                         <p class="n-new">New member<i class="t-button" aria-hidden="true" onclick="showSignup()">Sign up now</i></p>
@@ -57,12 +59,15 @@
             <div class="right-container" id="signup">
                 <div class="right">
                     <h1 class="a-heading">Sign Up</h1>
-                    <form class="signup">
+                    <form class="signup" autocomplete="off">
                         <label for="name">Username</label>
-                        <input class="ip" type="text" placeholder="Name" id="name" required autocomplete="off">
+                        <input class="ip" type="text" placeholder="Name" id="name" required autocomplete="off" minlength="5" maxlength="20">
+                        <p class="form-error">Please enter correct name length</p>
                         <label for="email">Email address</label>
                         <input class="ip" type="email" placeholder="Email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                        <p class="form-error">Please enter correct email</p>
                         <label for="password">Password</label>
+                        <p class="form-error">Please enter correct password length</p>
                         <input class="ip" type="password" placeholder="Password" id="password" required>
                         <div class="confirm">
                             <input type="checkbox" required>
