@@ -325,17 +325,25 @@ a {
     cursor: pointer;
 }
 
+.popular .course-list-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
 .popular .course-list {
     display: flex;
     gap: 30px;
     margin-top: 55px;
+    transition: transform 0.3s ease-in-out;
+    width: 100%; /* cần thiết để làm khung */
 }
 
 .popular .course-item {
-    flex: 1;
+    flex: 0 0 calc((100% - 60px) / 3); /* 3 item mỗi lần hiển thị (2 gaps = 60px) */
     background: #ffffff;
     border: 1px solid #e2dfda;
     border-radius: 12px;
+    transition: box-shadow 0.3s ease;
 }
 
 .popular .course-item:hover {

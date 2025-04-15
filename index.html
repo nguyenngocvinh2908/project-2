@@ -46,7 +46,7 @@
                                 <a href="#!">Courses</a>
                             </li>
                             <li>
-                                <a href="#!">Pricing</a>
+                                <a href="#!">Blog</a>
                             </li>
                             <li>
                                 <a href="#!">Reviews</a>
@@ -160,7 +160,7 @@
                             </p>
                         </div>
                         <div class="controls">
-                            <button class="control-btn">
+                            <button class="control-btn prev-btn">
                                 <svg
                                     width="8"
                                     height="14"
@@ -176,7 +176,7 @@
                                     />
                                 </svg>
                             </button>
-                            <button class="control-btn">
+                            <button class="control-btn next-btn">
                                 <svg
                                     width="8"
                                     height="14"
@@ -194,127 +194,494 @@
                             </button>
                         </div>
                     </div>
-
-                    <div class="course-list">
-                        <!-- Course item 1 -->
-                        <div class="course-item">
-                            <a href="#!">
-                                <img
-                                    src="./assets/img/item.svg"
-                                    alt="Basic web design"
-                                    class="thumb"
-                                />
-                            </a>
-                            <div class="info">
-                                <div class="head">
-                                    <h3 class="title">
-                                        <a
-                                            href="#!"
-                                            class="line-clamp break-all"
-                                        >
-                                            Basic web design
-                                        </a>
-                                    </h3>
-                                    <div class="rating">
-                                        <img
-                                            src="./assets/img/star.svg"
-                                            alt="Star"
-                                            class="star"
-                                        />
-                                        <span class="value">4.5</span>
+                    <div class="course-list-wrapper">
+                        <div class="course-list">
+                            <!-- Course item 1 -->
+                            <div class="course-item">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/item.svg"
+                                        alt="Basic web design"
+                                        class="thumb"
+                                    />
+                                </a>
+                                <div class="info">
+                                    <div class="head">
+                                        <h3 class="title">
+                                            <a
+                                                href="#!"
+                                                class="line-clamp break-all"
+                                            >
+                                                Basic web design
+                                            </a>
+                                        </h3>
+                                        <div class="rating">
+                                            <img
+                                                src="./assets/img/star.svg"
+                                                alt="Star"
+                                                class="star"
+                                            />
+                                            <span class="value">4.5</span>
+                                        </div>
                                     </div>
-                                </div>
-                                <p class="desc line-clamp line-2 break-all">
-                                    Get the best course, gain knowledge and
-                                    shine for your future career.
-                                </p>
-                                <div class="foot">
-                                    <span class="price">$120.75</span>
-                                    <button class="btn book-btn">
-                                        Book Now
-                                    </button>
+                                    <p class="desc line-clamp line-2 break-all">
+                                        Get the best course, gain knowledge and
+                                        shine for your future career.
+                                    </p>
+                                    <div class="foot">
+                                        <span class="price">$120.75</span>
+                                        <button class="btn book-btn">
+                                            Book Now
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <!-- Course item 2 -->
-                        <div class="course-item">
-                            <a href="#!">
-                                <img
-                                    src="./assets/img/item2.svg"
-                                    alt="UI/UX design"
-                                    class="thumb"
-                                />
-                            </a>
-                            <div class="info">
-                                <div class="head">
-                                    <h3 class="title">
-                                        <a
-                                            href="#!"
-                                            class="line-clamp break-all"
-                                        >
-                                            UI/UX design
-                                        </a>
-                                    </h3>
-                                    <div class="rating">
-                                        <img
-                                            src="./assets/img/star.svg"
-                                            alt="Star"
-                                            class="star"
-                                        />
-                                        <span class="value">4.5</span>
+    
+                            <!-- Course item 2 -->
+                            <div class="course-item">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/item2.svg"
+                                        alt="UI/UX design"
+                                        class="thumb"
+                                    />
+                                </a>
+                                <div class="info">
+                                    <div class="head">
+                                        <h3 class="title">
+                                            <a
+                                                href="#!"
+                                                class="line-clamp break-all"
+                                            >
+                                                UI/UX design
+                                            </a>
+                                        </h3>
+                                        <div class="rating">
+                                            <img
+                                                src="./assets/img/star.svg"
+                                                alt="Star"
+                                                class="star"
+                                            />
+                                            <span class="value">4.5</span>
+                                        </div>
                                     </div>
-                                </div>
-                                <p class="desc line-clamp line-2 break-all">
-                                    Get the best course, gain knowledge and
-                                    shine for your future career.
-                                </p>
-                                <div class="foot">
-                                    <span class="price">$120.75</span>
-                                    <button class="btn book-btn">
-                                        Book Now
-                                    </button>
+                                    <p class="desc line-clamp line-2 break-all">
+                                        Get the best course, gain knowledge and
+                                        shine for your future career.
+                                    </p>
+                                    <div class="foot">
+                                        <span class="price">$120.75</span>
+                                        <button class="btn book-btn">
+                                            Book Now
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <!-- Course item 3 -->
-                        <div class="course-item">
-                            <a href="#!">
-                                <img
-                                    src="./assets/img/item3.svg"
-                                    alt="Web App design"
-                                    class="thumb"
-                                />
-                            </a>
-                            <div class="info">
-                                <div class="head">
-                                    <h3 class="title">
-                                        <a
-                                            href="#!"
-                                            class="line-clamp break-all"
-                                        >
-                                            Web App design
-                                        </a>
-                                    </h3>
-                                    <div class="rating">
-                                        <img
-                                            src="./assets/img/star.svg"
-                                            alt="Star"
-                                            class="star"
-                                        />
-                                        <span class="value">4.5</span>
+    
+                            <!-- Course item 3 -->
+                            <div class="course-item">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/item3.svg"
+                                        alt="Web App design"
+                                        class="thumb"
+                                    />
+                                </a>
+                                <div class="info">
+                                    <div class="head">
+                                        <h3 class="title">
+                                            <a
+                                                href="#!"
+                                                class="line-clamp break-all"
+                                            >
+                                                Web App design
+                                            </a>
+                                        </h3>
+                                        <div class="rating">
+                                            <img
+                                                src="./assets/img/star.svg"
+                                                alt="Star"
+                                                class="star"
+                                            />
+                                            <span class="value">4.5</span>
+                                        </div>
+                                    </div>
+                                    <p class="desc line-clamp line-2 break-all">
+                                        Get the best course, gain knowledge and
+                                        shine for your future career.
+                                    </p>
+                                    <div class="foot">
+                                        <span class="price">$120.75</span>
+                                        <button class="btn book-btn">
+                                            Book Now
+                                        </button>
                                     </div>
                                 </div>
-                                <p class="desc line-clamp line-2 break-all">
-                                    Get the best course, gain knowledge and
-                                    shine for your future career.
-                                </p>
-                                <div class="foot">
-                                    <span class="price">$120.75</span>
-                                    <button class="btn book-btn">
-                                        Book Now
-                                    </button>
+                            </div>
+                            <!-- Course Item 4 -->
+                            <div class="course-item">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/item.svg"
+                                        alt="Basic web design"
+                                        class="thumb"
+                                    />
+                                </a>
+                                <div class="info">
+                                    <div class="head">
+                                        <h3 class="title">
+                                            <a
+                                                href="#!"
+                                                class="line-clamp break-all"
+                                            >
+                                                Basic web design
+                                            </a>
+                                        </h3>
+                                        <div class="rating">
+                                            <img
+                                                src="./assets/img/star.svg"
+                                                alt="Star"
+                                                class="star"
+                                            />
+                                            <span class="value">4.5</span>
+                                        </div>
+                                    </div>
+                                    <p class="desc line-clamp line-2 break-all">
+                                        Get the best course, gain knowledge and
+                                        shine for your future career.
+                                    </p>
+                                    <div class="foot">
+                                        <span class="price">$120.75</span>
+                                        <button class="btn book-btn">
+                                            Book Now
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Course item 5 -->
+                            <div class="course-item">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/item2.svg"
+                                        alt="UI/UX design"
+                                        class="thumb"
+                                    />
+                                </a>
+                                <div class="info">
+                                    <div class="head">
+                                        <h3 class="title">
+                                            <a
+                                                href="#!"
+                                                class="line-clamp break-all"
+                                            >
+                                                UI/UX design
+                                            </a>
+                                        </h3>
+                                        <div class="rating">
+                                            <img
+                                                src="./assets/img/star.svg"
+                                                alt="Star"
+                                                class="star"
+                                            />
+                                            <span class="value">4.5</span>
+                                        </div>
+                                    </div>
+                                    <p class="desc line-clamp line-2 break-all">
+                                        Get the best course, gain knowledge and
+                                        shine for your future career.
+                                    </p>
+                                    <div class="foot">
+                                        <span class="price">$120.75</span>
+                                        <button class="btn book-btn">
+                                            Book Now
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Course item 6 -->
+                            <div class="course-item">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/item3.svg"
+                                        alt="Web App design"
+                                        class="thumb"
+                                    />
+                                </a>
+                                <div class="info">
+                                    <div class="head">
+                                        <h3 class="title">
+                                            <a
+                                                href="#!"
+                                                class="line-clamp break-all"
+                                            >
+                                                Web App design
+                                            </a>
+                                        </h3>
+                                        <div class="rating">
+                                            <img
+                                                src="./assets/img/star.svg"
+                                                alt="Star"
+                                                class="star"
+                                            />
+                                            <span class="value">4.5</span>
+                                        </div>
+                                    </div>
+                                    <p class="desc line-clamp line-2 break-all">
+                                        Get the best course, gain knowledge and
+                                        shine for your future career.
+                                    </p>
+                                    <div class="foot">
+                                        <span class="price">$120.75</span>
+                                        <button class="btn book-btn">
+                                            Book Now
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Course item 7 -->
+                            <div class="course-item">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/item.svg"
+                                        alt="Basic web design"
+                                        class="thumb"
+                                    />
+                                </a>
+                                <div class="info">
+                                    <div class="head">
+                                        <h3 class="title">
+                                            <a
+                                                href="#!"
+                                                class="line-clamp break-all"
+                                            >
+                                                Basic web design
+                                            </a>
+                                        </h3>
+                                        <div class="rating">
+                                            <img
+                                                src="./assets/img/star.svg"
+                                                alt="Star"
+                                                class="star"
+                                            />
+                                            <span class="value">4.5</span>
+                                        </div>
+                                    </div>
+                                    <p class="desc line-clamp line-2 break-all">
+                                        Get the best course, gain knowledge and
+                                        shine for your future career.
+                                    </p>
+                                    <div class="foot">
+                                        <span class="price">$120.75</span>
+                                        <button class="btn book-btn">
+                                            Book Now
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Course item 8 -->
+                            <div class="course-item">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/item2.svg"
+                                        alt="UI/UX design"
+                                        class="thumb"
+                                    />
+                                </a>
+                                <div class="info">
+                                    <div class="head">
+                                        <h3 class="title">
+                                            <a
+                                                href="#!"
+                                                class="line-clamp break-all"
+                                            >
+                                                UI/UX design
+                                            </a>
+                                        </h3>
+                                        <div class="rating">
+                                            <img
+                                                src="./assets/img/star.svg"
+                                                alt="Star"
+                                                class="star"
+                                            />
+                                            <span class="value">4.5</span>
+                                        </div>
+                                    </div>
+                                    <p class="desc line-clamp line-2 break-all">
+                                        Get the best course, gain knowledge and
+                                        shine for your future career.
+                                    </p>
+                                    <div class="foot">
+                                        <span class="price">$120.75</span>
+                                        <button class="btn book-btn">
+                                            Book Now
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Course item 9 -->
+                            <div class="course-item">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/item3.svg"
+                                        alt="Web App design"
+                                        class="thumb"
+                                    />
+                                </a>
+                                <div class="info">
+                                    <div class="head">
+                                        <h3 class="title">
+                                            <a
+                                                href="#!"
+                                                class="line-clamp break-all"
+                                            >
+                                                Web App design
+                                            </a>
+                                        </h3>
+                                        <div class="rating">
+                                            <img
+                                                src="./assets/img/star.svg"
+                                                alt="Star"
+                                                class="star"
+                                            />
+                                            <span class="value">4.5</span>
+                                        </div>
+                                    </div>
+                                    <p class="desc line-clamp line-2 break-all">
+                                        Get the best course, gain knowledge and
+                                        shine for your future career.
+                                    </p>
+                                    <div class="foot">
+                                        <span class="price">$120.75</span>
+                                        <button class="btn book-btn">
+                                            Book Now
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Course Item 10 -->
+                            <div class="course-item">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/item.svg"
+                                        alt="Basic web design"
+                                        class="thumb"
+                                    />
+                                </a>
+                                <div class="info">
+                                    <div class="head">
+                                        <h3 class="title">
+                                            <a
+                                                href="#!"
+                                                class="line-clamp break-all"
+                                            >
+                                                Basic web design
+                                            </a>
+                                        </h3>
+                                        <div class="rating">
+                                            <img
+                                                src="./assets/img/star.svg"
+                                                alt="Star"
+                                                class="star"
+                                            />
+                                            <span class="value">4.5</span>
+                                        </div>
+                                    </div>
+                                    <p class="desc line-clamp line-2 break-all">
+                                        Get the best course, gain knowledge and
+                                        shine for your future career.
+                                    </p>
+                                    <div class="foot">
+                                        <span class="price">$120.75</span>
+                                        <button class="btn book-btn">
+                                            Book Now
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Course item 11 -->
+                            <div class="course-item">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/item2.svg"
+                                        alt="UI/UX design"
+                                        class="thumb"
+                                    />
+                                </a>
+                                <div class="info">
+                                    <div class="head">
+                                        <h3 class="title">
+                                            <a
+                                                href="#!"
+                                                class="line-clamp break-all"
+                                            >
+                                                UI/UX design
+                                            </a>
+                                        </h3>
+                                        <div class="rating">
+                                            <img
+                                                src="./assets/img/star.svg"
+                                                alt="Star"
+                                                class="star"
+                                            />
+                                            <span class="value">4.5</span>
+                                        </div>
+                                    </div>
+                                    <p class="desc line-clamp line-2 break-all">
+                                        Get the best course, gain knowledge and
+                                        shine for your future career.
+                                    </p>
+                                    <div class="foot">
+                                        <span class="price">$120.75</span>
+                                        <button class="btn book-btn">
+                                            Book Now
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Course item 12 -->
+                            <div class="course-item">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/item3.svg"
+                                        alt="Web App design"
+                                        class="thumb"
+                                    />
+                                </a>
+                                <div class="info">
+                                    <div class="head">
+                                        <h3 class="title">
+                                            <a
+                                                href="#!"
+                                                class="line-clamp break-all"
+                                            >
+                                                Web App design
+                                            </a>
+                                        </h3>
+                                        <div class="rating">
+                                            <img
+                                                src="./assets/img/star.svg"
+                                                alt="Star"
+                                                class="star"
+                                            />
+                                            <span class="value">4.5</span>
+                                        </div>
+                                    </div>
+                                    <p class="desc line-clamp line-2 break-all">
+                                        Get the best course, gain knowledge and
+                                        shine for your future career.
+                                    </p>
+                                    <div class="foot">
+                                        <span class="price">$120.75</span>
+                                        <button class="btn book-btn">
+                                            Book Now
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -426,8 +793,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
-
+            </div> 
             <!-- Features 1 -->
             <div class="features">
                 <div class="main-content">
@@ -817,4 +1183,6 @@
             </div>
         </footer>
     </body>
+    <script src="./assets/js/main.js">
+    </script>
 </html>
