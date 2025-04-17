@@ -21,5 +21,24 @@ prevBtn.addEventListener("click", () => {
         courseList.style.transform = `translateX(-${currentIndex1 * itemWidth * itemsPerSlide}px)`;
     }
 });
+// Feedback slider
+const feedbackList = document.getElementById('feedbackList');
+    const items = document.querySelectorAll('.feedback-item');
+    let currentIndex = 0;
 
+    function showItem(index) {
+      // Cập nhật vị trí của feedbackList
+      feedbackList.style.transform = `translateX(-${index * 100}%)`;
+
+      // Xóa class active của tất cả các item
+      items.forEach(item => item.classList.remove('active'));
+
+      // Thêm class active vào item hiện tại
+      items[index].classList.add('active');
+    }
+
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % items.length;
+      showItem(currentIndex);
+    }, 3000); // Chuyển đổi sau mỗi 4 giây
 

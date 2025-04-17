@@ -418,74 +418,92 @@ a {
     margin-top: 135px;
     padding: 96px 0;
     background: #2e2100;
-}
+  }
 
-.feedback-list {
-    display: flex;
-    overflow: hidden;
-}
+  .feedback .main-content {
+    max-width: 960px;
+    margin: auto;
+    position: relative;
+  }
 
-.feedback-item {
+  .feedback-list {
     display: flex;
+    position: relative;
     width: 100%;
-    flex-shrink: 0;
-}
+    transition: transform 0.6s ease-in-out;
+  }
 
-.feedback-item .avatar {
+  .feedback-item {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    gap: 30px;
+    min-width: 100%;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+  }
+
+  .feedback-item.active {
+    opacity: 1;
+  }
+
+  .feedback-item .info {
+    flex: 1;
+    max-width: 34%;
+  }
+
+  .feedback-item .avatar {
     width: 72px;
     height: 72px;
     border-radius: 50%;
     object-fit: cover;
-}
+  }
 
-.feedback-item .info .title {
-    font-family: var(--font-heading);
-    margin-top: 18px;
+  .feedback-item .title {
     font-weight: 700;
     font-size: 2.4rem;
-    line-height: 1.42;
     color: #f7f7f7;
-}
+    margin-top: 18px;
+  }
 
-.feedback-item .info .desc {
+  .feedback-item .desc {
     margin-top: 4px;
     font-size: 1.4rem;
-    line-height: 1.86;
     color: #bfbcb3;
-}
+  }
 
-.feedback-item .dots {
+  .feedback-item .dots {
     display: flex;
     margin-top: 28px;
-}
+  }
 
-.feedback-item .dot {
+  .feedback-item .dot {
     margin-right: 6px;
     width: 6px;
     height: 6px;
     border-radius: 50%;
     background: #634700;
     cursor: pointer;
-}
+  }
 
-.feedback-item .dot.active {
+  .feedback-item .dot.active {
     background: #ffb900;
-    cursor: default;
-}
+  }
 
-.feedback-item .content {
-    width: 66%;
-    margin-left: auto;
-}
+  .feedback-item .content {
+    flex: 1;
+  }
 
-.feedback-item blockquote {
-    margin-left: 30px;
+  .feedback-item blockquote {
     font-style: italic;
     font-size: 2.6rem;
-    line-height: 1.54;
     color: #ffffff;
-}
+  }
 
+  .open-quotes {
+    width: 24px;
+    margin-bottom: 10px;
+  }
 /* Features */
 .features {
     margin-top: 135px;
