@@ -76,7 +76,7 @@ a {
 }
 
 .break-all {
-    word-break: break-all;
+    word-break: keep-all;
 }
 
 /* Header */
@@ -346,6 +346,7 @@ a {
     transition: box-shadow 0.3s ease;
 }
 
+.popular .course-item:hover .thumb,
 .popular .course-item:hover {
     border-color: transparent;
     box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
@@ -353,10 +354,12 @@ a {
 
 .popular .course-item .thumb {
     width: calc(100% + 2px);
-    height: 278px;
+    max-height: 450px;
     margin: -1px;
     object-fit: cover;
     border-radius: 12px 12px 0px 0px;
+    border: 1px solid #e2dfda;
+    border-bottom: none;
 }
 
 .popular .course-item .info {
