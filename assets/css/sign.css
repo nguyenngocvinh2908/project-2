@@ -114,7 +114,8 @@ input:invalid:not(:placeholder-shown) + .form-error {
 .signup:has(:invalid) .s-button,
 .login:has(:invalid) .s-button {
     background: #d6d5d5;
-    cursor: not-allowed;
+    pointer-events: none;
+    cursor:default;
     color: #888888;
 }
 
