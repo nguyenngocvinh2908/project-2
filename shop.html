@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lesson</title>
+        <!-- Embed fonts -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Sen:wght@700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="./assets/favicon/site.webmanifest">
+        <!-- Reset CSS -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <!-- Styles -->
+        <link rel="stylesheet" href="./assets/css/shop.css" />
+        
+        <!--Js-->
+        <script src="./assets/js/product.js" defer></script>
+        <script src="./assets/js/cart.js" defer></script>
+
+
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header fixed">
+            <div class="main-content">
+                <div class="body">
+                    <!-- Logo -->
+                    <a href="#">
+                        <img
+                        src="./assets/img/Lesson..svg"
+                        alt="Lesson."
+                        class="logo"
+                    />
+                    </a>
+
+                    <!-- Nav -->
+                    <nav class="nav">
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="active">
+                                <a href="shop.html">Shop </a>
+                            </li>
+                            <li>
+                                <a href="blog.html">Blog</a>
+                            </li>
+                            <li>
+                                <a href="review.html">Reviews</a>
+                            </li>
+                            <li id="lg-bag">
+                                <a href="cart.html">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <span class="cart-icon-count">0</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- Action -->
+                    <div class="action">
+                        <a href="./sign_up.html" target="_blank" class="btn sign-up-btn">Sign In</a>
+                    </div>
+                </div>
+            </div>
+            
+        </header>
+
+        <!-- Main Content -->
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="filter-group">
+                <h3 class="filter-title">LIST PRODUCT</h3>
+                <ul class="filter-list">
+                    <li class="filter-item active" data-filter-type="category" data-value="all">All</li>
+                    <li class="filter-item" data-filter-type="category" data-value="magazine">Magazine</li>
+                    <li class="filter-item" data-filter-type="category" data-value="foreign-book">Foreign book</li>
+                    <li class="filter-item" data-filter-type="category" data-value="comic">Comic</li>
+                    <li class="filter-item" data-filter-type="category" data-value="novel">Novel</li>
+                    <li class="filter-item" data-filter-type="category" data-value="children-book">Children's book</li>
+                    <li class="filter-item" data-filter-type="category" data-value="love-book">Love book</li>
+                </ul>
+            </div>
+        
+            <div class="filter-group">
+                <h3 class="filter-title">PRICES</h3>
+                <ul class="filter-list">
+                    <li class="filter-item active" data-filter-type="price" data-value="all">All</li>
+                    <li class="filter-item" data-filter-type="price" data-value="-100000"> <100.000đ</li>
+                    <li class="filter-item" data-filter-type="price" data-value="100000-200000">100.000đ - 200.000đ</li>
+                    <li class="filter-item" data-filter-type="price" data-value="200000-500000">200.000đ - 500.000đ</li>
+                    <li class="filter-item" data-filter-type="price" data-value="500000-"> >500.000đ</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Product Grid -->
+        <main>
+            <div class="row-content">
+                <h1 class="main-heading-product">Product Information</h1>
+                <div class="header-search">
+                    <input type="text" class="header-search__text font-size-16" placeholder="Search Book...">
+                    <button class="header-search__button text-white">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="product-grid">
+                <!-- Product Item 1 -->
+                <div class="product-card" data-category="magazine"  data-price="244000">
+                    <div class="discount-badge">-30%</div>
+                    <button class="quick-view-btn" data-product-id="1">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                    <img src="./assets/img/book-1.jpg" alt="Harry Potter" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title line-clamp break-all">Harry Potter and the Half Blood Prince</h3>
+                        <p class="title-product line-clamp line-2 break-all">Harry Potter and the Half Blood Prince Harry Potter and the Half Blood Prince Harry Potter and the Half Blood Prince</p>
+                        <div class="price-and-cart">
+                            <div class="price-container">
+                                <p class="current-price">30.34$</p>
+                                <p class="old-price">39.442$</p>
+                            </div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product Item 2 -->
+                <div class="product-card" data-category="magazine"  data-price="244000">
+                    <div class="discount-badge">-30%</div>
+                    <button class="quick-view-btn" data-product-id="1">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                    <img src="./assets/img/shop-2.png" alt="Harry Potter" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title line-clamp break-all">You Stay Young</h3>
+                        <p class="title-product line-clamp line-2 break-all"> Forever Young is a highly scientific health book containing many new and rich perspectives on the topic as well as updated information written in a liberal way, with many metaphors, many comparisons, 
+                            many images and very witty to help you discover interesting things about your body as well as the factors that affect it.</p>
+                        <div class="price-and-cart">
+                            <div class="price-container">
+                                <p class="current-price">30.34$</p>
+                                <p class="old-price">39.442$</p>
+                            </div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Item 3 -->
+                <div class="product-card" data-category="magazine"  data-price="244000">
+                    <div class="discount-badge">-30%</div>
+                    <button class="quick-view-btn" data-product-id="1">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                    <img src="./assets/img/book-3.png" alt="Harry Potter" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title line-clamp break-all">Change Your Mindset</h3>
+                        <p class="title-product line-clamp line-2 break-all">Every day businesses delude themselves about what they need to do to survive.</p>
+                        <div class="price-and-cart">
+                            <div class="price-container">
+                                <p class="current-price">30.34$</p>
+                                <p class="old-price">39.442$</p>
+                            </div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Item 4 -->
+                <div class="product-card" data-category="magazine"  data-price="244000">
+                    <div class="discount-badge">-30%</div>
+                    <button class="quick-view-btn" data-product-id="1">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                    <img src="./assets/img/book-4.png" alt="Harry Potter" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title line-clamp break-all">Song of the Cells</h3>
+                        <p class="title-product line-clamp line-2 break-all">"The Song of the Cell" takes readers on a magical journey of 
+                            discovery about the most basic unit of life: the cell.</p>
+                        <div class="price-and-cart">
+                            <div class="price-container">
+                                <p class="current-price">30.34$</p>
+                                <p class="old-price">39.442$</p>
+                            </div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Item 5 -->
+                <div class="product-card" data-category="magazine"  data-price="244000">
+                    <div class="discount-badge">-30%</div>
+                    <button class="quick-view-btn" data-product-id="1">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                    <img src="./assets/img/book-5.png" alt="Harry Potter" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title line-clamp break-all">Care Guide</h3>
+                        <p class="title-product line-clamp line-2 break-all">Combines personal experience with expert opinion on health care as well as political and social issues</p>
+                        <div class="price-and-cart">
+                            <div class="price-container">
+                                <p class="current-price">30.34$</p>
+                                <p class="old-price">39.442$</p>
+                            </div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Item 6 -->
+                <div class="product-card" data-category="magazine"  data-price="244000">
+                    <div class="discount-badge">-30%</div>
+                    <button class="quick-view-btn" data-product-id="1">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                    <img src="./assets/img/book-6.png" alt="Harry Potter" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title line-clamp break-all">The Lost Science of Nutrition</h3>
+                        <p class="title-product line-clamp line-2 break-all">In Lost Nutrition, the author brings together 20 
+                            years of medical learning, practice, and reflection.</p>
+                        <div class="price-and-cart">
+                            <div class="price-container">
+                                <p class="current-price">30.34$</p>
+                                <p class="old-price">39.442$</p>
+                            </div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Item 7 -->
+                <div class="product-card" data-category="magazine"  data-price="244000">
+                    <div class="discount-badge">-30%</div>
+                    <button class="quick-view-btn" data-product-id="1">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                    <img src="./assets/img/book-7.png" alt="Harry Potter" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title line-clamp break-all">Human Design</h3>
+                        <p class="title-product line-clamp line-2 break-all">Inspired by various schools of wisdom, including the chakras, 
+                            I Ching, astrology and the tree of life, 
+                            Human Design is an analytical system based on our time and date of birth, 
+                            illustrated in a unique chart that reveals our opportunities, challenges, personality, strengths, relationships...</p>
+                        <div class="price-and-cart">
+                            <div class="price-container">
+                                <p class="current-price">30.34$</p>
+                                <p class="old-price">39.442$</p>
+                            </div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Item 8 -->
+                <div class="product-card" data-category="magazine"  data-price="244000">
+                    <div class="discount-badge">-30%</div>
+                    <button class="quick-view-btn" data-product-id="1">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                    <img src="./assets/img/book-8.png" alt="Harry Potter" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title line-clamp break-all">Organizational Design</h3>
+                        <p class="title-product line-clamp line-2 break-all">In today's volatile world, organization design is a constant activity, and a challenge for all managers, 
+                            whether managing a global enterprise or a very small team.</p>
+                        <div class="price-and-cart">
+                            <div class="price-container">
+                                <p class="current-price">30.34$</p>
+                                <p class="old-price">39.442$</p>
+                            </div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Item 9 -->
+                <div class="product-card" data-category="magazine"  data-price="244000">
+                    <div class="discount-badge">-30%</div>
+                    <button class="quick-view-btn" data-product-id="1">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                    <img src="./assets/img/book-9.png" alt="Harry Potter" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title line-clamp break-all">Personal Career Design</h3>
+                        <p class="title-product line-clamp line-2 break-all">Building a career is not a one-time event, it is a lifelong journey. 
+                            It requires dedication to yourself and the work you pursue.</p>
+                        <div class="price-and-cart">
+                            <div class="price-container">
+                                <p class="current-price">30.34$</p>
+                                <p class="old-price">39.442$</p>
+                            </div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Item 10 -->
+                <div class="product-card" data-category="magazine"  data-price="244000">
+                    <div class="discount-badge">-30%</div>
+                    <button class="quick-view-btn" data-product-id="1">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                    <img src="./assets/img/book-10.png" alt="Harry Potter" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title line-clamp break-all">Visual Marketing</h3>
+                        <p class="title-product line-clamp line-2 break-all">With over 1 billion hours of video watched every day on YouTube, 
+                            you begin to appreciate how ingrained video is in our daily lives.</p>
+                        <div class="price-and-cart">
+                            <div class="price-container">
+                                <p class="current-price">30.34$</p>
+                                <p class="old-price">39.442$</p>
+                            </div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Item 11 -->
+                <div class="product-card" data-category="magazine"  data-price="244000">
+                    <div class="discount-badge">-30%</div>
+                    <button class="quick-view-btn" data-product-id="1">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                    <img src="./assets/img/book-11.png" alt="Harry Potter" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title line-clamp break-all">TikTok Marketing</h3>
+                        <p class="title-product line-clamp line-2 break-all">TikTok is exploding everywhere and has become one of the most downloaded apps in the world. 
+                            It's no surprise that marketers have started to see the potential of this platform.</p>
+                        <div class="price-and-cart">
+                            <div class="price-container">
+                                <p class="current-price">30.34$</p>
+                                <p class="old-price">39.442$</p>
+                            </div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 12 -->
+                <div class="product-card" data-category="magazine"  data-price="244000">
+                    <div class="discount-badge">-30%</div>
+                    <button class="quick-view-btn" data-product-id="1">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                    <img src="./assets/img/book-12.png" alt="Harry Potter" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title line-clamp break-all">MBA Marketing</h3>
+                        <p class="title-product line-clamp line-2 break-all">Marketing is increasingly playing an important role in the success of a business. 
+                            An effective marketing strategy will help increase the company's brand awareness, 
+                            boost sales and improve customer relationships.</p>
+                        <div class="price-and-cart">
+                            <div class="price-container">
+                                <p class="current-price">30.34$</p>
+                                <p class="old-price">39.442$</p>
+                            </div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 13 -->
+                <div class="product-card" data-category="magazine"  data-price="244000">
+                    <div class="discount-badge">-30%</div>
+                    <button class="quick-view-btn" data-product-id="1">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                    <img src="./assets/img/book-13.png" alt="Harry Potter" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title line-clamp break-all">Logistics and Supply Chain Management</h3>
+                        <p class="title-product line-clamp line-2 break-all">Logistics and Supply Chain Management - “Encyclopedia” of New Age Logistics</p>
+                        <div class="price-and-cart">
+                            <div class="price-container">
+                                <p class="current-price">30.34$</p>
+                                <p class="old-price">39.442$</p>
+                            </div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 14 -->
+                <div class="product-card" data-category="magazine"  data-price="244000">
+                    <div class="discount-badge">-30%</div>
+                    <button class="quick-view-btn" data-product-id="1">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                    <img src="./assets/img/book-14.png" alt="Harry Potter" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title line-clamp break-all">Currency war</h3>
+                        <p class="title-product line-clamp line-2 break-all">To be successful, a business needs a clear marketing strategy and an effective data analysis process.</p>
+                        <div class="price-and-cart">
+                            <div class="price-container">
+                                <p class="current-price">30.34$</p>
+                                <p class="old-price">39.442$</p>
+                            </div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 15 -->
+                <div class="product-card" data-category="magazine"  data-price="244000">
+                    <div class="discount-badge">-30%</div>
+                    <button class="quick-view-btn" data-product-id="1">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                    <img src="./assets/img/book-15.png" alt="Harry Potter" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title line-clamp break-all">Marketing Data Analysis</h3>
+                        <p class="title-product line-clamp line-2 break-all">To be successful, a business needs a clear marketing strategy and an effective data analysis process.</p>
+                        <div class="price-and-cart">
+                            <div class="price-container">
+                                <p class="current-price">30.34$</p>
+                                <p class="old-price">39.442$</p>
+                            </div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Quick View Modal -->
+                <div class="quick-view-modal">
+                    <div class="modal-overlay"></div>
+                    <div class="modal-content">
+                        <button class="close-modal">&times;</button>
+
+
+                        <div class="product-details">
+                        <!---Ảnh chính ảnh phụ-->
+                            <div class="product-images">
+                                <div class="main-image-container">
+                                    <img src="./assets/img/book-1.jpg" alt="Cánh Đồng Bất Tận" class="main-image">
+                                </div>
+                                <div class="thumbnail-gallery">
+                                    <div class="thumbnail active" data-image="./assets/img/book-1.jpg">
+                                        <img src="./assets/img/book-1-thumb.jpg" alt="Ảnh 1">
+                                    </div>
+                                    <div class="thumbnail" data-image="./assets/img/book-2.jpg">
+                                        <img src="./assets/img/book-2-thumb.jpg" alt="Ảnh 2">
+                                    </div>
+                                    <div class="thumbnail" data-image="./assets/img/book-3.jpg">
+                                        <img src="./assets/img/book-3-thumb.jpg" alt="Ảnh 3">
+                                    </div>
+                                    <div class="thumbnail" data-image="./assets/img/book-4.jpg">
+                                        <img src="./assets/img/book-4-thumb.jpg" alt="Ảnh 4">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="product-info">
+                                <h2>Harry Potter and the Half Blood Prince</h2>
+                                <div class="brand">Author: <span>J.K.Rowling</span></div>
+                                <div class="sku">Product code: <span>Updating</span></div>
+                                
+                                <div class="prices">
+                                    <span class="current-price">274.000₫</span>
+                                    <span class="old-price">335.000₫</span>
+                                </div>
+                                
+                                <div class="description">
+                                    <p>Product information is updating</p>
+                                </div>
+                                
+                                <div class="quantity">
+                                    <label>Quantily:</label>
+                                    <div class="qty-controls">
+                                        <button class="qty-minus">-</button>
+                                        <input type="number" value="1" min="1">
+                                        <button class="qty-plus">+</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="actions">
+                                    <button class="add-to-cart">
+                                        <i class="fas fa-cart-plus"></i>Add to the cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Thêm các sản phẩm khác tương tự -->
+            </div>
+        </main>
+
+    </div>
+
+        <!---Phan Trang-->
+        <section id ="pagination" class="section-p1">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href=""><i class="fa fa-long-arrow-alt-right"></i></a>    
+        </section>
+
+        <!---New Letter-->
+        <section id="newletter" class="section-p1 section-m1">
+            <div class="newstext">
+                <h4>Đăng kí tài khoản nhận bản tin </h4>
+                <p>Nhận thông tin cập nhật qua tài khoản đăng kí về cửa hàng mới nhất của chúng tôi và <span>các ưu đãi đặc biệt </span></p>
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="main-content">
+                <div class="row">
+                    <!-- Column 1 -->
+                    <div class="column">
+                        <a href="#">
+                            <img
+                            src="./assets/img/logo-footer.svg"
+                            alt="Lesson."
+                            class="logo"
+                            />
+                        </a>
+                        <p class="desc">
+                            Need to help for your dream Career? trust us. With
+                            Lesson, study becomes a lot easier with us.
+                        </p>
+                        <div class="socials">
+                            <a href="#!">
+                                <img
+                                    src="./assets/img/twitter.svg"
+                                    alt="Twitter"
+                                    class="icon"
+                                />
+                            </a>
+                            <a href="#!">
+                                <img
+                                    src="./assets/img/facebook.svg"
+                                    alt="Facebook"
+                                    class="icon"
+                                />
+                            </a>
+                            <a href="#!">
+                                <img
+                                    src="./assets/img/linkedin.svg"
+                                    alt="Linkedin"
+                                    class="icon"
+                                />
+                            </a>
+                            <a href="#!">
+                                <img
+                                    src="./assets/img/instagram.svg"
+                                    alt="Instagram"
+                                    class="icon"
+                                />
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="column">
+                        <h3 class="title">Company</h3>
+                        <ul class="list">
+                            <li>
+                                <a href="#!">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#!">Features</a>
+                            </li>
+                            <li>
+                                <a href="#!">Our Pricing</a>
+                            </li>
+                            <li>
+                                <a href="#!">Latest News</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 3 -->
+                    <div class="column">
+                        <h3 class="title">Support</h3>
+                        <ul class="list">
+                            <li>
+                                <a href="#!">FAQ’s</a>
+                            </li>
+                            <li>
+                                <a href="#!">Terms & Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#!">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#!">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 4 -->
+                    <div class="column">
+                        <h3 class="title">Address</h3>
+                        <ul class="list">
+                            <li>
+                                <a href="#!">
+                                    <strong>Location:</strong> 27 Division St,
+                                    New York, NY 10002, USA
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#!">
+                                    <strong>Email:</strong> email@gmail.com
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#!">
+                                    <strong>Phone:</strong> + 000 1234 567 890
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>Copyright ©2022 webdesign.gdn All rights reserved</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="./assets/js/main.js">
+    </script>
+</html>
