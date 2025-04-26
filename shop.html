@@ -23,11 +23,6 @@
         <!-- Styles -->
         <link rel="stylesheet" href="./assets/css/shop.css" />
         
-        <!--Js-->
-        <script src="./assets/js/product.js" defer></script>
-        <script src="./assets/js/cart.js" defer></script>
-
-
     </head>
     <body>
         <!-- Header -->
@@ -88,7 +83,7 @@
                     <li class="filter-item" data-filter-type="category" data-value="comic">Comic</li>
                     <li class="filter-item" data-filter-type="category" data-value="novel">Novel</li>
                     <li class="filter-item" data-filter-type="category" data-value="children-book">Children's book</li>
-                    <li class="filter-item" data-filter-type="category" data-value="love-book">Love book</li>
+                    <li class="filter-item" data-filter-type="category" data-value="economic">Economic book</li>
                 </ul>
             </div>
         
@@ -96,10 +91,10 @@
                 <h3 class="filter-title">PRICES</h3>
                 <ul class="filter-list">
                     <li class="filter-item active" data-filter-type="price" data-value="all">All</li>
-                    <li class="filter-item" data-filter-type="price" data-value="-100000"> <100.000đ</li>
-                    <li class="filter-item" data-filter-type="price" data-value="100000-200000">100.000đ - 200.000đ</li>
-                    <li class="filter-item" data-filter-type="price" data-value="200000-500000">200.000đ - 500.000đ</li>
-                    <li class="filter-item" data-filter-type="price" data-value="500000-"> >500.000đ</li>
+                    <li class="filter-item" data-filter-type="price" data-value="-10"> <10$</li>
+                    <li class="filter-item" data-filter-type="price" data-value="10-20">10$ - 20$</li>
+                    <li class="filter-item" data-filter-type="price" data-value="20-50">20$ - 50$</li>
+                    <li class="filter-item" data-filter-type="price" data-value="50-"> >50$</li>
                 </ul>
             </div>
         </aside>
@@ -117,7 +112,12 @@
             </div>
             <div class="product-grid">
                 <!-- Product Item 1 -->
-                <div class="product-card" data-category="magazine"  data-price="244000">
+                <div class="product-card"
+                     data-category="magazine"  
+                     data-price="27.608"
+                     data-author="J.K.Rowling"
+                     data-product-code="HP001"
+                     data-description="In this book, Harry Potter learns a lot about Voldemort's past, and Harry Potter prepares for the final battle against his nemesis with the help of Headmaster Dumbledore.">
                     <div class="discount-badge">-30%</div>
                     <button class="quick-view-btn" data-product-id="1">
                         <i class="fas fa-eye"></i>
@@ -125,10 +125,10 @@
                     <img src="./assets/img/book-1.jpg" alt="Harry Potter" class="product-image">
                     <div class="product-info">
                         <h3 class="product-title line-clamp break-all">Harry Potter and the Half Blood Prince</h3>
-                        <p class="title-product line-clamp line-2 break-all">Harry Potter and the Half Blood Prince Harry Potter and the Half Blood Prince Harry Potter and the Half Blood Prince</p>
+                        <p class="title-product line-clamp line-2 break-all">In this book, Harry Potter learns a lot about Voldemort's past, and Harry Potter prepares for the final battle against his nemesis with the help of Headmaster Dumbledore.</p>
                         <div class="price-and-cart">
                             <div class="price-container">
-                                <p class="current-price">30.34$</p>
+                                <p class="current-price">27.608$</p>
                                 <p class="old-price">39.442$</p>
                             </div>
                             <button class="add-to-cart">
@@ -139,20 +139,26 @@
                 </div>
                 
                 <!-- Product Item 2 -->
-                <div class="product-card" data-category="magazine"  data-price="244000">
-                    <div class="discount-badge">-30%</div>
+                <div class="product-card" 
+                    data-category="novel"  
+                    data-price="16.272"
+                    data-author="Michael F.Roizen, M.D - Mehmet C. Oz, M.D"
+                    data-product-code="HP002"
+                    data-description="Forever Young is a highly scientific health book containing many new and rich perspectives on the topic as well as updated information written in a liberal way, with many metaphors, many comparisons, 
+                    many images and very witty to help you discover interesting things about your body as well as the factors that affect it.">
+                    <div class="discount-badge">-20%</div>
                     <button class="quick-view-btn" data-product-id="1">
                         <i class="fas fa-eye"></i>
                     </button>
-                    <img src="./assets/img/shop-2.png" alt="Harry Potter" class="product-image">
+                    <img src="./assets/img/shop-2.png" alt="You Staying Young" class="product-image">
                     <div class="product-info">
-                        <h3 class="product-title line-clamp break-all">You Stay Young</h3>
+                        <h3 class="product-title line-clamp break-all">You Staying Young</h3>
                         <p class="title-product line-clamp line-2 break-all"> Forever Young is a highly scientific health book containing many new and rich perspectives on the topic as well as updated information written in a liberal way, with many metaphors, many comparisons, 
                             many images and very witty to help you discover interesting things about your body as well as the factors that affect it.</p>
                         <div class="price-and-cart">
                             <div class="price-container">
-                                <p class="current-price">30.34$</p>
-                                <p class="old-price">39.442$</p>
+                                <p class="current-price">16.272$</p>
+                                <p class="old-price">20.34$</p>
                             </div>
                             <button class="add-to-cart">
                                 <i class="fas fa-cart-plus"></i>
@@ -161,19 +167,24 @@
                     </div>
                 </div>
                 <!-- Product Item 3 -->
-                <div class="product-card" data-category="magazine"  data-price="244000">
-                    <div class="discount-badge">-30%</div>
+                <div class="product-card" 
+                    data-category="comic"  
+                    data-price="32.721"
+                    data-author="Geoff Tuff & Steven Goldback"
+                    data-product-code="HP003"
+                    data-description="Every day businesses delude themselves about what they need to do to survive.">
+                    <div class="discount-badge">-35%</div>
                     <button class="quick-view-btn" data-product-id="1">
                         <i class="fas fa-eye"></i>
                     </button>
-                    <img src="./assets/img/book-3.png" alt="Harry Potter" class="product-image">
+                    <img src="./assets/img/book-3.png" alt="Change Your Mindset" class="product-image">
                     <div class="product-info">
                         <h3 class="product-title line-clamp break-all">Change Your Mindset</h3>
                         <p class="title-product line-clamp line-2 break-all">Every day businesses delude themselves about what they need to do to survive.</p>
                         <div class="price-and-cart">
                             <div class="price-container">
-                                <p class="current-price">30.34$</p>
-                                <p class="old-price">39.442$</p>
+                                <p class="current-price">32.721$</p>
+                                <p class="old-price">50.34$</p>
                             </div>
                             <button class="add-to-cart">
                                 <i class="fas fa-cart-plus"></i>
@@ -182,19 +193,25 @@
                     </div>
                 </div>
                 <!-- Product Item 4 -->
-                <div class="product-card" data-category="magazine"  data-price="244000">
-                    <div class="discount-badge">-30%</div>
+                <div class="product-card" 
+                    data-category="foreign-book"  
+                    data-price="35.49"
+                    data-author="Siddhartha Mukherjee"
+                    data-product-code="HP004"
+                    data-description=" The Song Of The Cell takes readers on a magical journey of 
+                    discovery about the most basic unit of life: the cell.">
+                    <div class="discount-badge">-10%</div>
                     <button class="quick-view-btn" data-product-id="1">
                         <i class="fas fa-eye"></i>
                     </button>
-                    <img src="./assets/img/book-4.png" alt="Harry Potter" class="product-image">
+                    <img src="./assets/img/book-4.png" alt="Song of the Cells" class="product-image">
                     <div class="product-info">
-                        <h3 class="product-title line-clamp break-all">Song of the Cells</h3>
-                        <p class="title-product line-clamp line-2 break-all">"The Song of the Cell" takes readers on a magical journey of 
+                        <h3 class="product-title line-clamp break-all">The Song Of The Cells</h3>
+                        <p class="title-product line-clamp line-2 break-all">"The Song Of The Cell" takes readers on a magical journey of 
                             discovery about the most basic unit of life: the cell.</p>
                         <div class="price-and-cart">
                             <div class="price-container">
-                                <p class="current-price">30.34$</p>
+                                <p class="current-price">35.49$</p>
                                 <p class="old-price">39.442$</p>
                             </div>
                             <button class="add-to-cart">
@@ -205,19 +222,24 @@
                 </div>
 
                 <!-- Product Item 5 -->
-                <div class="product-card" data-category="magazine"  data-price="244000">
-                    <div class="discount-badge">-30%</div>
+                <div class="product-card" 
+                    data-category="magazine"  
+                    data-price="40"
+                    data-author="Virginia Morris"
+                    data-product-code="HP005"
+                    data-description="Combines personal experience with expert opinion on health care as well as political and social issues">
+                    <div class="discount-badge">-20%</div>
                     <button class="quick-view-btn" data-product-id="1">
                         <i class="fas fa-eye"></i>
                     </button>
-                    <img src="./assets/img/book-5.png" alt="Harry Potter" class="product-image">
+                    <img src="./assets/img/book-5.png" alt="Care Guide" class="product-image">
                     <div class="product-info">
                         <h3 class="product-title line-clamp break-all">Care Guide</h3>
                         <p class="title-product line-clamp line-2 break-all">Combines personal experience with expert opinion on health care as well as political and social issues</p>
                         <div class="price-and-cart">
                             <div class="price-container">
-                                <p class="current-price">30.34$</p>
-                                <p class="old-price">39.442$</p>
+                                <p class="current-price">40.00$</p>
+                                <p class="old-price">50.00$</p>
                             </div>
                             <button class="add-to-cart">
                                 <i class="fas fa-cart-plus"></i>
@@ -227,20 +249,26 @@
                 </div>
 
                 <!-- Product Item 6 -->
-                <div class="product-card" data-category="magazine"  data-price="244000">
-                    <div class="discount-badge">-30%</div>
+                <div class="product-card" 
+                    data-category="magazine"  
+                    data-price="50"
+                    data-author="Vương Đào"
+                    data-product-code="HP006"
+                    data-description="In Lost Nutrition, the author brings together 20 
+                    years of medical learning, practice, and reflection.">
+                    <div class="discount-badge">-50%</div>
                     <button class="quick-view-btn" data-product-id="1">
                         <i class="fas fa-eye"></i>
                     </button>
-                    <img src="./assets/img/book-6.png" alt="Harry Potter" class="product-image">
+                    <img src="./assets/img/book-6.png" alt="The Lost Science of Nutrition" class="product-image">
                     <div class="product-info">
                         <h3 class="product-title line-clamp break-all">The Lost Science of Nutrition</h3>
                         <p class="title-product line-clamp line-2 break-all">In Lost Nutrition, the author brings together 20 
                             years of medical learning, practice, and reflection.</p>
                         <div class="price-and-cart">
                             <div class="price-container">
-                                <p class="current-price">30.34$</p>
-                                <p class="old-price">39.442$</p>
+                                <p class="current-price">50.00$</p>
+                                <p class="old-price">100.00$</p>
                             </div>
                             <button class="add-to-cart">
                                 <i class="fas fa-cart-plus"></i>
@@ -250,12 +278,20 @@
                 </div>
 
                 <!-- Product Item 7 -->
-                <div class="product-card" data-category="magazine"  data-price="244000">
-                    <div class="discount-badge">-30%</div>
+                <div class="product-card" 
+                    data-category="novel"  
+                    data-price="36.375"
+                    data-author="Jenna Zoe"
+                    data-product-code="HP007"
+                    data-description="Inspired by various schools of wisdom, including the chakras, 
+                    I Ching, astrology and the tree of life, 
+                    Human Design is an analytical system based on our time and date of birth, 
+                    illustrated in a unique chart that reveals our opportunities, challenges, personality, strengths, relationships...">
+                    <div class="discount-badge">-25%</div>
                     <button class="quick-view-btn" data-product-id="1">
                         <i class="fas fa-eye"></i>
                     </button>
-                    <img src="./assets/img/book-7.png" alt="Harry Potter" class="product-image">
+                    <img src="./assets/img/book-7.png" alt="Human Design" class="product-image">
                     <div class="product-info">
                         <h3 class="product-title line-clamp break-all">Human Design</h3>
                         <p class="title-product line-clamp line-2 break-all">Inspired by various schools of wisdom, including the chakras, 
@@ -264,8 +300,8 @@
                             illustrated in a unique chart that reveals our opportunities, challenges, personality, strengths, relationships...</p>
                         <div class="price-and-cart">
                             <div class="price-container">
-                                <p class="current-price">30.34$</p>
-                                <p class="old-price">39.442$</p>
+                                <p class="current-price">36.375$</p>
+                                <p class="old-price">48.5$</p>
                             </div>
                             <button class="add-to-cart">
                                 <i class="fas fa-cart-plus"></i>
@@ -275,20 +311,26 @@
                 </div>
 
                 <!-- Product Item 8 -->
-                <div class="product-card" data-category="magazine"  data-price="244000">
-                    <div class="discount-badge">-30%</div>
+                <div class="product-card" 
+                    data-category="magazine"  
+                    data-price="26.775"
+                    data-author="Richard M.Burton"
+                    data-product-code="HP008"
+                    data-description="In today's volatile world, organization design is a constant activity, and a challenge for all managers, 
+                    whether managing a global enterprise or a very small team.">
+                    <div class="discount-badge">-15%</div>
                     <button class="quick-view-btn" data-product-id="1">
                         <i class="fas fa-eye"></i>
                     </button>
-                    <img src="./assets/img/book-8.png" alt="Harry Potter" class="product-image">
+                    <img src="./assets/img/book-8.png" alt="Organizational Design" class="product-image">
                     <div class="product-info">
                         <h3 class="product-title line-clamp break-all">Organizational Design</h3>
                         <p class="title-product line-clamp line-2 break-all">In today's volatile world, organization design is a constant activity, and a challenge for all managers, 
                             whether managing a global enterprise or a very small team.</p>
                         <div class="price-and-cart">
                             <div class="price-container">
-                                <p class="current-price">30.34$</p>
-                                <p class="old-price">39.442$</p>
+                                <p class="current-price">26.775$</p>
+                                <p class="old-price">31.5$</p>
                             </div>
                             <button class="add-to-cart">
                                 <i class="fas fa-cart-plus"></i>
@@ -298,20 +340,26 @@
                 </div>
 
                 <!-- Product Item 9 -->
-                <div class="product-card" data-category="magazine"  data-price="244000">
-                    <div class="discount-badge">-30%</div>
+                <div class="product-card" 
+                    data-category="novel"  
+                    data-price="36.96"
+                    data-author="Bill Burnett"
+                    data-product-code="HP009"
+                    data-description="Building a career is not a one-time event, it is a lifelong journey. 
+                    It requires dedication to yourself and the work you pursue.">
+                    <div class="discount-badge">-12%</div>
                     <button class="quick-view-btn" data-product-id="1">
                         <i class="fas fa-eye"></i>
                     </button>
-                    <img src="./assets/img/book-9.png" alt="Harry Potter" class="product-image">
+                    <img src="./assets/img/book-9.png" alt="Personal Career Design" class="product-image">
                     <div class="product-info">
                         <h3 class="product-title line-clamp break-all">Personal Career Design</h3>
                         <p class="title-product line-clamp line-2 break-all">Building a career is not a one-time event, it is a lifelong journey. 
                             It requires dedication to yourself and the work you pursue.</p>
                         <div class="price-and-cart">
                             <div class="price-container">
-                                <p class="current-price">30.34$</p>
-                                <p class="old-price">39.442$</p>
+                                <p class="current-price">36.96$</p>
+                                <p class="old-price">42.00$</p>
                             </div>
                             <button class="add-to-cart">
                                 <i class="fas fa-cart-plus"></i>
@@ -321,20 +369,26 @@
                 </div>
 
                 <!-- Product Item 10 -->
-                <div class="product-card" data-category="magazine"  data-price="244000">
-                    <div class="discount-badge">-30%</div>
+                <div class="product-card" 
+                    data-category="foreign-book"  
+                    data-price="41.87"
+                    data-author="Marcus Sheridan"
+                    data-product-code="HP0010"
+                    data-description="With over 1 billion hours of video watched every day on YouTube, 
+                    you begin to appreciate how ingrained video is in our daily lives.">
+                    <div class="discount-badge">-21%</div>
                     <button class="quick-view-btn" data-product-id="1">
                         <i class="fas fa-eye"></i>
                     </button>
-                    <img src="./assets/img/book-10.png" alt="Harry Potter" class="product-image">
+                    <img src="./assets/img/book-10.png" alt="Visual Marketing" class="product-image">
                     <div class="product-info">
                         <h3 class="product-title line-clamp break-all">Visual Marketing</h3>
                         <p class="title-product line-clamp line-2 break-all">With over 1 billion hours of video watched every day on YouTube, 
                             you begin to appreciate how ingrained video is in our daily lives.</p>
                         <div class="price-and-cart">
                             <div class="price-container">
-                                <p class="current-price">30.34$</p>
-                                <p class="old-price">39.442$</p>
+                                <p class="current-price">41.87$</p>
+                                <p class="old-price">53.00$</p>
                             </div>
                             <button class="add-to-cart">
                                 <i class="fas fa-cart-plus"></i>
@@ -344,8 +398,14 @@
                 </div>
 
                 <!-- Product Item 11 -->
-                <div class="product-card" data-category="magazine"  data-price="244000">
-                    <div class="discount-badge">-30%</div>
+                <div class="product-card" 
+                    data-category="economic"  
+                    data-price="9"
+                    data-author="Markus Rach"
+                    data-product-code="HP0011"
+                    data-description="TikTok is exploding everywhere and has become one of the most downloaded apps in the world. 
+                    It's no surprise that marketers have started to see the potential of this platform.">
+                    <div class="discount-badge">-5%</div>
                     <button class="quick-view-btn" data-product-id="1">
                         <i class="fas fa-eye"></i>
                     </button>
@@ -356,8 +416,8 @@
                             It's no surprise that marketers have started to see the potential of this platform.</p>
                         <div class="price-and-cart">
                             <div class="price-container">
-                                <p class="current-price">30.34$</p>
-                                <p class="old-price">39.442$</p>
+                                <p class="current-price">9.00$</p>
+                                <p class="old-price">9.45$</p>
                             </div>
                             <button class="add-to-cart">
                                 <i class="fas fa-cart-plus"></i>
@@ -366,12 +426,19 @@
                     </div>
                 </div>
                 <!-- Item 12 -->
-                <div class="product-card" data-category="magazine"  data-price="244000">
-                    <div class="discount-badge">-30%</div>
+                <div class="product-card" 
+                    data-category="economic"  
+                    data-price="24"
+                    data-author="Yukihiro Makita"
+                    data-product-code="HP0012"
+                    data-description="Marketing is increasingly playing an important role in the success of a business. 
+                    An effective marketing strategy will help increase the company's brand awareness, 
+                    boost sales and improve customer relationships.">
+                    <div class="discount-badge">-18%</div>
                     <button class="quick-view-btn" data-product-id="1">
                         <i class="fas fa-eye"></i>
                     </button>
-                    <img src="./assets/img/book-12.png" alt="Harry Potter" class="product-image">
+                    <img src="./assets/img/book-12.png" alt="MBA Marketing" class="product-image">
                     <div class="product-info">
                         <h3 class="product-title line-clamp break-all">MBA Marketing</h3>
                         <p class="title-product line-clamp line-2 break-all">Marketing is increasingly playing an important role in the success of a business. 
@@ -379,8 +446,8 @@
                             boost sales and improve customer relationships.</p>
                         <div class="price-and-cart">
                             <div class="price-container">
-                                <p class="current-price">30.34$</p>
-                                <p class="old-price">39.442$</p>
+                                <p class="current-price">24.00$</p>
+                                <p class="old-price">28.32$</p>
                             </div>
                             <button class="add-to-cart">
                                 <i class="fas fa-cart-plus"></i>
@@ -389,19 +456,24 @@
                     </div>
                 </div>
                 <!-- Item 13 -->
-                <div class="product-card" data-category="magazine"  data-price="244000">
-                    <div class="discount-badge">-30%</div>
+                <div class="product-card" 
+                    data-category="economic"  
+                    data-price="24.5"
+                    data-author="Paul R.Murphy"
+                    data-product-code="HP0013"
+                    data-description="Logistics and Supply Chain Management - “Encyclopedia” of New Age Logistics">
+                    <div class="discount-badge">-25%</div>
                     <button class="quick-view-btn" data-product-id="1">
                         <i class="fas fa-eye"></i>
                     </button>
-                    <img src="./assets/img/book-13.png" alt="Harry Potter" class="product-image">
+                    <img src="./assets/img/book-13.png" alt="Logistics" class="product-image">
                     <div class="product-info">
                         <h3 class="product-title line-clamp break-all">Logistics and Supply Chain Management</h3>
                         <p class="title-product line-clamp line-2 break-all">Logistics and Supply Chain Management - “Encyclopedia” of New Age Logistics</p>
                         <div class="price-and-cart">
                             <div class="price-container">
-                                <p class="current-price">30.34$</p>
-                                <p class="old-price">39.442$</p>
+                                <p class="current-price">24.5$</p>
+                                <p class="old-price">30.625$</p>
                             </div>
                             <button class="add-to-cart">
                                 <i class="fas fa-cart-plus"></i>
@@ -410,19 +482,24 @@
                     </div>
                 </div>
                 <!-- Item 14 -->
-                <div class="product-card" data-category="magazine"  data-price="244000">
-                    <div class="discount-badge">-30%</div>
+                <div class="product-card" 
+                    data-category="magazine"  
+                    data-price="34"
+                    data-author="Song Hong Bing"
+                    data-product-code="HP0014"
+                    data-description="To be successful, a business needs a clear marketing strategy and an effective data analysis process.">
+                    <div class="discount-badge">-5%</div>
                     <button class="quick-view-btn" data-product-id="1">
                         <i class="fas fa-eye"></i>
                     </button>
-                    <img src="./assets/img/book-14.png" alt="Harry Potter" class="product-image">
+                    <img src="./assets/img/book-14.png" alt="Currency war" class="product-image">
                     <div class="product-info">
                         <h3 class="product-title line-clamp break-all">Currency war</h3>
                         <p class="title-product line-clamp line-2 break-all">To be successful, a business needs a clear marketing strategy and an effective data analysis process.</p>
                         <div class="price-and-cart">
                             <div class="price-container">
-                                <p class="current-price">30.34$</p>
-                                <p class="old-price">39.442$</p>
+                                <p class="current-price">34.00$</p>
+                                <p class="old-price">35.7$</p>
                             </div>
                             <button class="add-to-cart">
                                 <i class="fas fa-cart-plus"></i>
@@ -431,19 +508,24 @@
                     </div>
                 </div>
                 <!-- Item 15 -->
-                <div class="product-card" data-category="magazine"  data-price="244000">
-                    <div class="discount-badge">-30%</div>
+                <div class="product-card" 
+                    data-category="magazine"  
+                    data-price="24"
+                    data-author="Haya Ajjan"
+                    data-product-code="HP0015"
+                    data-description="To be successful, a business needs a clear marketing strategy and an effective data analysis process.">
+                    <div class="discount-badge">-16%</div>
                     <button class="quick-view-btn" data-product-id="1">
                         <i class="fas fa-eye"></i>
                     </button>
-                    <img src="./assets/img/book-15.png" alt="Harry Potter" class="product-image">
+                    <img src="./assets/img/book-15.png" alt="Marketing Data Analysis" class="product-image">
                     <div class="product-info">
                         <h3 class="product-title line-clamp break-all">Marketing Data Analysis</h3>
                         <p class="title-product line-clamp line-2 break-all">To be successful, a business needs a clear marketing strategy and an effective data analysis process.</p>
                         <div class="price-and-cart">
                             <div class="price-container">
-                                <p class="current-price">30.34$</p>
-                                <p class="old-price">39.442$</p>
+                                <p class="current-price">24.00$</p>
+                                <p class="old-price">27.84$</p>
                             </div>
                             <button class="add-to-cart">
                                 <i class="fas fa-cart-plus"></i>
@@ -454,47 +536,28 @@
 
 
                 <!-- Quick View Modal -->
-                <div class="quick-view-modal">
+                <div class="quick-view-modal" data-product-id="">
                     <div class="modal-overlay"></div>
                     <div class="modal-content">
                         <button class="close-modal">&times;</button>
-
-
+            
                         <div class="product-details">
-                        <!---Ảnh chính ảnh phụ-->
                             <div class="product-images">
-                                <div class="main-image-container">
-                                    <img src="./assets/img/book-1.jpg" alt="Cánh Đồng Bất Tận" class="main-image">
-                                </div>
-                                <div class="thumbnail-gallery">
-                                    <div class="thumbnail active" data-image="./assets/img/book-1.jpg">
-                                        <img src="./assets/img/book-1-thumb.jpg" alt="Ảnh 1">
-                                    </div>
-                                    <div class="thumbnail" data-image="./assets/img/book-2.jpg">
-                                        <img src="./assets/img/book-2-thumb.jpg" alt="Ảnh 2">
-                                    </div>
-                                    <div class="thumbnail" data-image="./assets/img/book-3.jpg">
-                                        <img src="./assets/img/book-3-thumb.jpg" alt="Ảnh 3">
-                                    </div>
-                                    <div class="thumbnail" data-image="./assets/img/book-4.jpg">
-                                        <img src="./assets/img/book-4-thumb.jpg" alt="Ảnh 4">
-                                    </div>
-                                </div>
+                                    <img src="..."  class="main-image">
                             </div>
 
-
                             <div class="product-info">
-                                <h2>Harry Potter and the Half Blood Prince</h2>
-                                <div class="brand">Author: <span>J.K.Rowling</span></div>
-                                <div class="sku">Product code: <span>Updating</span></div>
+                                <h2>Product Title</h2>
+                                <div class="brand">Author: <span></span></div>
+                                <div class="sku">Product code: <span></span></div>
                                 
                                 <div class="prices">
-                                    <span class="current-price">274.000₫</span>
-                                    <span class="old-price">335.000₫</span>
+                                    <span class="current-price"></span>
+                                    <span class="old-price"></span>
                                 </div>
                                 
                                 <div class="description">
-                                    <p>Product information is updating</p>
+                                    <p></p>
                                 </div>
                                 
                                 <div class="quantity">
@@ -515,7 +578,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Thêm các sản phẩm khác tương tự -->
             </div>
         </main>
 
@@ -531,8 +593,8 @@
         <!---New Letter-->
         <section id="newletter" class="section-p1 section-m1">
             <div class="newstext">
-                <h4>Đăng kí tài khoản nhận bản tin </h4>
-                <p>Nhận thông tin cập nhật qua tài khoản đăng kí về cửa hàng mới nhất của chúng tôi và <span>các ưu đãi đặc biệt </span></p>
+                <h4>Subscribe for Updates</h4>
+                <p>Be the first to know about new products and <span>limited-time discounts</span></p>
             </div>
         </section>
 
@@ -653,6 +715,7 @@
             </div>
         </footer>
     </body>
-    <script src="./assets/js/main.js">
-    </script>
+        <!--Js-->
+        <script src="./assets/js/product.js" defer></script>
+        <script src="./assets/js/cart.js" defer></script>
 </html>
