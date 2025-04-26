@@ -44,27 +44,43 @@ const feedbackList = document.getElementById('feedbackList');
       showItem(currentIndex);
     }, 3000); // Chuyển đổi sau mỗi 4 giây
 
-//blog
-document.addEventListener("DOMContentLoaded", function () {
-    const readMoreLinks = document.querySelectorAll(".read-more");
+// Blog slider
+    const items1 = document.querySelectorAll('.blog .item');
+    const dots = document.querySelectorAll('.blog .dot');
+    const itemsPerSlide1 = 3;
+    let currentIndex2 = 0;
 
-    readMoreLinks.forEach(link => {
-        link.addEventListener("click", function (event) {
-            event.preventDefault();
-            alert("Read More functionality will be implemented soon!");
+    function showSlide(index) {
+        const start = index * itemsPerSlide1;
+        const end = start + itemsPerSlide1;
+
+        items1.forEach((item, i) => {
+            if (i >= start && i < end) {
+                item.classList.add('active');
+            } else {
+                item.classList.remove('active');
+            }
+        });
+
+        // Update dot
+        dots.forEach(dot => dot.classList.remove('active'));
+        dots[index].classList.add('active');
+
+        currentIndex2 = index;
+    }
+
+    dots.forEach(dot => {
+        dot.addEventListener('click', () => {
+            const index = parseInt(dot.getAttribute('data-index'));
+            if (index !== currentIndex2) {
+                showSlide(index);
+            }
         });
     });
 
+    // Init
+    showSlide(0);
 
-    // Simulate newsletter subscription action
-    const newsletterSection = document.querySelector("#newletter");
-    const newstext = newsletterSection.querySelector("h4");
-
-    newsletterSection.addEventListener("click", () => {
-        newstext.textContent = "Thank you for subscribing!";
-        newstext.style.color = "green";
-    });
-});
 
 
     
