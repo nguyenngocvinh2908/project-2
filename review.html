@@ -52,8 +52,12 @@
                             <li class="active">
                                 <a href="review.html">Reviews</a>
                             </li>
-                            <li id="lg-bag"><a class="active" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                           
+                            <li id="lg-bag">
+                                <a href="cart.html">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <span class="cart-icon-count">0</span>
+                                </a>
+                            </li>
                         </ul>
                     </nav>
                     <!-- Action -->
@@ -256,41 +260,7 @@
             </div>
         </section>
     
-        <script>
-            // Xử lý rating bằng JavaScript
-            document.querySelectorAll('.rating-input i').forEach(star => {
-                star.addEventListener('click', function() {
-                    const rating = this.getAttribute('data-rating');
-                    document.getElementById('ratingValue').value = rating;
-                    
-                    // Cập nhật hiển thị sao
-                    const stars = document.querySelectorAll('.rating-input i');
-                    stars.forEach((s, index) => {
-                        if (index < rating) {
-                            s.classList.remove('far');
-                            s.classList.add('fas');
-                        } else {
-                            s.classList.remove('fas');
-                            s.classList.add('far');
-                        }
-                    });
-                });
-            });
-    
-            // Xử lý form submit
-            document.getElementById('reviewForm').addEventListener('submit', function(e) {
-                e.preventDefault();
-                alert('Cảm ơn bạn đã gửi đánh giá!');
-                this.reset();
-                
-                // Reset sao về trạng thái ban đầu
-                const stars = document.querySelectorAll('.rating-input i');
-                stars.forEach(star => {
-                    star.classList.remove('fas');
-                    star.classList.add('far');
-                });
-            });
-        </script>
+        
         <!---New Letter-->
         <section id="newletter" class="section-p1 section-m1">
             <div class="newstext">
@@ -414,5 +384,40 @@
             </div>
         </footer>
     </body>
+    <script src="./assets/js/cart.js"></script>
+    <script>
+            // Xử lý rating bằng JavaScript
+            document.querySelectorAll('.rating-input i').forEach(star => {
+                star.addEventListener('click', function() {
+                    const rating = this.getAttribute('data-rating');
+                    document.getElementById('ratingValue').value = rating;
+                    
+                    // Cập nhật hiển thị sao
+                    const stars = document.querySelectorAll('.rating-input i');
+                    stars.forEach((s, index) => {
+                        if (index < rating) {
+                            s.classList.remove('far');
+                            s.classList.add('fas');
+                        } else {
+                            s.classList.remove('fas');
+                            s.classList.add('far');
+                        }
+                    });
+                });
+            });
+    
+            // Xử lý form submit
+            document.getElementById('reviewForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Cảm ơn bạn đã gửi đánh giá!');
+                this.reset();
+                
+                // Reset sao về trạng thái ban đầu
+                const stars = document.querySelectorAll('.rating-input i');
+                stars.forEach(star => {
+                    star.classList.remove('fas');
+                    star.classList.add('far');
+                });
+            });
     </script>
 </html>
